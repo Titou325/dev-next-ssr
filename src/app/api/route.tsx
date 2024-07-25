@@ -21,7 +21,7 @@ export const GET = async () => {
 }; */
 
 export const GET = async () => {
-  const html = renderToReadableStream(<WithState />);
+  const html = await renderToReadableStream(<WithState />);
 
   return new Response(html, {
     headers: {
